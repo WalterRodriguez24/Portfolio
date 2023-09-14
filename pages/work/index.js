@@ -33,9 +33,11 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum es el texto que se usa habitualmente en diseño gráfico
-              en demostraciones de tipografías o de borradores de diseño para
-              probar el diseño visual antes de insertar el texto final.
+              As a frontend developer, I have had the privilege of working on a
+              variety of projects that combine attractive design and
+              cutting-edge functionality. My focus is on creating engaging and
+              highly responsive user experiences, using technologies such as
+              HTML5, CSS3 and JavaScript.
             </motion.p>
           </div>
           {/* slider */}

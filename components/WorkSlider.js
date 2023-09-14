@@ -5,17 +5,19 @@ const workSlides = {
       images: [
         {
           title: "(ChatPro)",
-          path: "/thumb1.jpg",
-          link: "https://www.youtube.com/",
+          path: "/chatPro.png",
+          link: "https://github.com/WalterRodriguez24/chatpro.git",
         },
         {
           title: "CV",
-          path: "/thumb2.jpg",
+          path: "/cv.png",
+          link: "https://walterrodriguez24.github.io/walterRodriguezCV/",
         },
         
         {
           title: "Portafolio-web",
-          path: "/thumb4.jpg",
+          path: "/portafolio.png",
+          link: "https://github.com/WalterRodriguez24/Portfolio.git",
         },
       ],
     },
@@ -60,7 +62,7 @@ const WorkSlider = () => {
                     key={index}
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group"
                   >
-                    <div className="flex items-center justify-center relative overflow-hidden group">
+                    <div className="flex items-center justify-center relative overflow-hidden group rounded-md" >
                       {/* image */}
 
                       <a href={image.link} target="_blank" rel="noopener noreferrer" class="target-blank">
@@ -77,7 +79,7 @@ const WorkSlider = () => {
                       
                    
                       {/* title */}
-                      <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
+                      <div className="absolute text-accent bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
                           {/* title part 1 */}
                           <div className="delay-100">Link</div>
