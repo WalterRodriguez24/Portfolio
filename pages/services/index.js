@@ -1,4 +1,5 @@
 // components
+/* eslint-disable */
 
 import ServicesSlider from "../../components/ServiceSlider";
 

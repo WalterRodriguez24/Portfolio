@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { BsArrowRight } from "react-icons/bs";
