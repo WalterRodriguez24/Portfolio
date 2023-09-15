@@ -10,10 +10,10 @@ const workSlides = {
         },
         {
           title: "CV",
-          path: "/cv.png",
+          path: "/cvWR.png",
           link: "https://walterrodriguez24.github.io/walterRodriguezCV/",
         },
-        
+
         {
           title: "Portafolio-web",
           path: "/portafolio.png",
@@ -40,8 +40,6 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
 const WorkSlider = () => {
-
-
   return (
     <Swiper
       spaceBetween={10}
@@ -55,29 +53,29 @@ const WorkSlider = () => {
         return (
           <SwiperSlide key={index}>
             <div className="grid grid-cols-2 grid-rows-2 gap-4 cursor-pointer ">
-              
               {slide.images.map((image, index) => {
                 return (
                   <div
                     key={index}
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group"
                   >
-                    <div className="flex items-center justify-center relative overflow-hidden group rounded-md" >
+                    <div className="flex items-center justify-center relative overflow-hidden group rounded-md">
                       {/* image */}
 
-                      <a href={image.link} target="_blank" rel="noopener noreferrer" class="target-blank">
-
+                      <a
+                        href={image.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="target-blank"
+                      >
                         <Image
                           src={image.path}
                           width={500}
                           height={300}
                           alt=""
                         />
-
                       </a>
-                    
-                      
-                   
+
                       {/* title */}
                       <div className="absolute text-accent bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2em]">
