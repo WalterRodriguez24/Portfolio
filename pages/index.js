@@ -45,13 +45,16 @@ const Home = () => {
             websites and applications that combine design, functionality and
             results. I work closely with my clients and use advanced
             technologies to deliver exceptional projects.
-            <br/>
-            <span className="text-accent">Together, we transform your ideas into a digital reality. </span> 
+            <br />
+            <span className="text-accent">
+              Together, we transform your ideas into a digital reality.{" "}
+            </span>
           </motion.p>
-          {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
+          {/* btn responsive */}
+          <div className="flex justify-center lg:hidden relative">
             <ProjectsBtn />
           </div>
+
           <motion.div
             variants={fadeIn("down", 0.4)}
             initial="hidden"
@@ -59,6 +62,7 @@ const Home = () => {
             exit="hidden"
             className="hidden xl:flex"
           >
+            {/* btn pc */}
             <ProjectsBtn />
           </motion.div>
         </div>
@@ -82,7 +86,7 @@ const Home = () => {
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32
         lg:bottom-0 lg:right-[8%]"
         >
-          <Avatar />
+          {/* <Avatar /> */}
         </motion.div>
       </div>
     </div>

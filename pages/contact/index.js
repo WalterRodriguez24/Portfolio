@@ -24,7 +24,7 @@ const Contact = () => {
     message: "",
   });
 
-  const [isButtonDisabled, setIsButtonDisabled] = useState(true); // Estado para habilitar/deshabilitar el botón
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true); 
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -45,7 +45,7 @@ const Contact = () => {
             message: "",
           });
           setIsButtonDisabled(true);
-          notify(); 
+          notify();
         })
         .catch((error) => {
           console.error(error.text);
@@ -61,7 +61,9 @@ const Contact = () => {
       ...formData,
       [name]: value,
     });
-    setIsButtonDisabled(!(formData.name && formData.email_id && formData.message));
+    setIsButtonDisabled(
+      !(formData.name && formData.email_id && formData.message)
+    );
   };
 
   return (
@@ -101,10 +103,11 @@ const Contact = () => {
                 type="text"
                 placeholder="email"
                 id="email_id"
-                className="input"
+                className="input "
                 name="email_id"
                 value={formData.email_id}
                 onChange={handleInputChange}
+                autoCapitalize="off"
                 required
               />
             </div>
@@ -112,14 +115,15 @@ const Contact = () => {
               placeholder="message"
               id="message"
               name="message"
-              className="textarea"
+              className="textarea "
               value={formData.message}
               onChange={handleInputChange}
+              autoCapitalize="off"
               required
             ></textarea>
             <button
-              type="submit" 
-              disabled={isButtonDisabled} 
+              type="submit"
+              disabled={isButtonDisabled}
               id="button"
               value="Send Email"
               className="btn rounded-full border bordee-white /50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
