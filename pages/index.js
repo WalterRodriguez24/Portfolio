@@ -51,7 +51,7 @@ const Home = () => {
             </span>
           </motion.p>
           {/* btn responsive */}
-          <div className="flex justify-center lg:hidden relative">
+          <div className="flex justify-center xl:hidden relative md:-mt-10">
             <ProjectsBtn />
           </div>
 
@@ -60,7 +60,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
+            className="hidden xl:flex -mt-5 "
           >
             {/* btn pc */}
             <ProjectsBtn />
